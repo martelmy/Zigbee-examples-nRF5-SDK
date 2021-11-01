@@ -39,7 +39,7 @@
  */
 /** @file
  *
- * @defgroup zigbee_examples_bind_test main.c
+ * @defgroup zigbee_examples_light_switch main.c
  * @{
  * @ingroup zigbee_examples
  * @brief Dimmer switch for HA profile implementation.
