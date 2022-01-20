@@ -2,7 +2,7 @@ PROJECT_NAME     := zigbee_light_switch_pca10056
 TARGETS          := nrf52840_xxaa
 OUTPUT_DIRECTORY := _build
 
-SDK_ROOT := ../../../../../../..
+SDK_ROOT := ../../../../../SDKTZ4.1
 PROJ_DIR := ../../..
 
 $(OUTPUT_DIRECTORY)/nrf52840_xxaa.out: \

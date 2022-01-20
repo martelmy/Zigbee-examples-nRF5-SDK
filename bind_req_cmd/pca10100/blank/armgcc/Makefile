@@ -2,7 +2,7 @@ PROJECT_NAME     := zigbee_bind_test_pca10100
 TARGETS          := nrf52833_xxaa
 OUTPUT_DIRECTORY := _build
 
-SDK_ROOT := ../../../../../../..
+SDK_ROOT := ../../../../../SDKTZ4.1
 PROJ_DIR := ../../..
 
 $(OUTPUT_DIRECTORY)/nrf52833_xxaa.out: \

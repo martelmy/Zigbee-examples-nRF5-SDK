@@ -1,6 +1,6 @@
 <!DOCTYPE CrossStudio_Project_File>
-<solution Name="zigbee_light_switch_pca10100" target="8" version="2">
-  <project Name="zigbee_light_switch_pca10100">
+<solution Name="zigbee_bind_test_pca10100" target="8" version="2">
+  <project Name="zigbee_bind_test_pca10100">
     <configuration
       Name="Common"
       arm_architecture="v7EM"
