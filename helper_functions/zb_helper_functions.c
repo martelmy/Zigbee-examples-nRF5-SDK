@@ -2,6 +2,25 @@
 #include "nrf_log.h"
 #include "zb_helper_functions.h"
 
+static zb_void_t get_lqi()
+{
+    uint32_t i;
+    zb_uint16_t addr;
+
+    /* If gc_neighbor[i].used is 0, the entry is not used */
+    /* If gc_neighbor[i].ext_neighbor is 1, this is ext neighbor record, else base neighbor */
+    for (i = 0; i < gc_neighbor_table_size; i++) {
+        if ((gc_neighbor[i].used == 0) ||
+            (gc_neighbor[i].ext_neighbor != 0))
+        {
+            continue;
+        }
+        zb_address_short_by_ref(&addr, gc_neighbor[i].u.base.addr_ref);
+        NRF_LOG_INFO("short_addr: 0x%04x, #LQI: %d", addr, gc_neighbor[i].lqi);
+    }
+    
+}
+
 /* Get neighbor table */
 static zb_void_t get_neighbors()
 {
